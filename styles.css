@@ -58,23 +58,29 @@
     color: #383E42;
     margin-left: 30px;
     text-decoration: underline #7A77B9;
+    display: block;
+    width: 100%;
   }
   
   .colors {
     border: 2px dashed #BD9DEA;
-    max-width: 625px;
     margin-left: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    width: 85%;
   }
-  
+
   .colors > p {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
+    display: inline-flex;
+    justify-content: space-around;
+    min-width: 150px;
+    min-height: 150px;
     text-align: center;
     margin: 15px;
     margin-left: 30px;
     margin-bottom: 35px;
     font-family: 'Azeret Mono';
+    align-items: center;
   }
   
   #platinum {
@@ -106,16 +112,20 @@
   .fonts {
     border: 2px dashed #BD9DEA;
     background-color: #EBE8E7;
-    max-width: 625px;
     margin-top: 30px;
     margin-left: 30px;
+    display: flex;
+    flex-flow: wrap;
+    max-width: 85%;
   }
-  
+
   #azeret-mono {
     font-family: 'Azeret Mono';
     color: #383E42;
     margin: 30px;
+    min-width: 250px;
     max-width: 625px;
+    display: block;
   }
   
   #azeret-mono .headline {
@@ -135,7 +145,9 @@
     font-family: ABeeZee;
     color: #383E42;
     margin: 30px;
+    min-width: 250px;
     max-width: 625px;
+    display: block;
   }
   
   #abeezee .headline {
@@ -154,10 +166,20 @@
     margin-top: 30px;
     margin-left: 30px;
     margin-bottom: 50px;
+    display: flex;
+    flex-flow: wrap;
+    max-width: 85%;
   }
   
   #main-heading {
     margin: 30px;
+    clear: right;
+    border: 1px solid #EA7186;
+    padding: 20px 30px;
+  }
+
+  h1.main-headline {
+    text-align: left !important;
   }
   
   #main-heading ul {
@@ -169,6 +191,8 @@
   
   #subheading {
     margin: 30px;
+    border: 1px solid #EA7186;
+    padding: 20px 30px;
   }
   
   #subheading h2 {
@@ -192,6 +216,8 @@
     font-size: 16px;
     font-weight: normal;
     line-height: 1.5;
+    border: 1px solid #EA7186;
+    padding: 20px 30px;
   }
   
   
