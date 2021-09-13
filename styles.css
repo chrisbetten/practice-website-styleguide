@@ -117,6 +117,7 @@
     display: flex;
     flex-flow: wrap;
     max-width: 85%;
+    align-items: center;
   }
 
   #azeret-mono {
@@ -169,6 +170,7 @@
     display: flex;
     flex-flow: wrap;
     max-width: 85%;
+    justify-content: left;
   }
   
   #main-heading {
